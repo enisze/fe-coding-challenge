@@ -1,11 +1,19 @@
-import React from 'react'
+import Image from 'next/image'
+import type React from 'react'
 
+//Improve using avif or webp -> Quicker decoding than jpg
+//Compress (e.g. via squoosh)
 export const SomeImage: React.FC = () => {
 	return (
 		<div>
-			<img
+			<Image
 				src="https://cs3.wettercomassets.com/images/interview/hafen.jpg"
+				alt="hafen"
 				style={{ width: '500px' }}
+				width={500}
+				height={300}
+				loading="eager"
+				priority
 			/>
 			<div>
 				Description:
