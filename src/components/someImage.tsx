@@ -1,8 +1,12 @@
 import Image from 'next/image'
 import type React from 'react'
 
+//For LCP
 //Improve using avif or webp -> Quicker decoding than jpg
 //Compress (e.g. via squoosh)
+
+//For CLS
+//There was no indicator for CLS, but in general, e.g. a placeholder
 export const SomeImage: React.FC = () => {
 	return (
 		<div>
