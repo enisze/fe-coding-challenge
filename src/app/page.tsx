@@ -1,14 +1,26 @@
 import { SomeImage } from '@/components/someImage'
-import NextLink from 'next/link'
+import { buttonVariants } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
+import { default as NextLink } from 'next/link'
 import type React from 'react'
+import styles from './page.module.css'
 
 const HomePage: React.FC = () => {
 	return (
-		<main>
-			<h1>wetter.com coding challenge</h1>
-			<NextLink href="/forecast">go to Forecast Page</NextLink>
-			<SomeImage />
-		</main>
+		<div className={styles.page}>
+			<main>
+				<h1>wetter.com coding challenge</h1>
+				<NextLink href="/forecast">go to Forecast Page</NextLink>
+
+				<NextLink
+					href={'/this-is-the-forecast-page/7-days/DE0001020'}
+					className={cn(buttonVariants({ variant: 'link' }), '')}
+				>
+					Zur 7 Tage Übersicht für Berlin
+				</NextLink>
+				<SomeImage />
+			</main>
+		</div>
 	)
 }
 
