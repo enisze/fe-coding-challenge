@@ -66,6 +66,14 @@ const ForecastDay = ({ item }: { item: ForecastWeatherNearby['items'][0] }) => {
 						</div>
 					</CardContent>
 				</AccordionContent>
+
+				<details open className="sr-only">
+					<summary>
+						{item.spaces.map((space, spaceIndex) => (
+							<DailyForecastDetail key={spaceIndex} space={space} />
+						))}
+					</summary>
+				</details>
 			</Card>
 		</AccordionItem>
 	)
