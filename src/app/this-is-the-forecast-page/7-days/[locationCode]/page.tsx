@@ -1,4 +1,4 @@
-import { WeatherForecast } from '@/components/Listing'
+import { WeatherForecast } from '@/components/WeatherForecast'
 import { paramsSchema } from '@/lib/schema'
 import { getForecastByDays } from '@/server/api'
 
