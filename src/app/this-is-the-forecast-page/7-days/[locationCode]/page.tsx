@@ -12,7 +12,7 @@ const Page = async ({
 	const { locationCode } = paramsSchema.parse(resolvedParams)
 
 	const forecast = await getForecastByDays({
-		days: 3,
+		days: 7,
 		locationCode,
 	})
 
