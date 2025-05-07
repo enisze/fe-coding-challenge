@@ -23,16 +23,18 @@ const Page = async ({
 			<div className="text-xl font-bold">Wetterübersicht</div>
 			<WeatherForecast forecast={forecast} />
 
-			<Link
-				href={`/this-is-the-forecast-page/3-days/${locationCode}`}
-				className={buttonVariants({ variant: 'link' })}
-			>
-				Zur 3 Tage Übersicht
-			</Link>
+			<div className="pt-4 flex gap-2">
+				<Link
+					href={`/this-is-the-forecast-page/3-days/${locationCode}`}
+					className={buttonVariants({ variant: 'secondary' })}
+				>
+					Zur 3 Tage Übersicht
+				</Link>
 
-			<Link href={'/'} className={buttonVariants({ variant: 'link' })}>
-				Zur HomePage
-			</Link>
+				<Link href={'/'} className={buttonVariants({ variant: 'secondary' })}>
+					Zur HomePage
+				</Link>
+			</div>
 		</div>
 	)
 }

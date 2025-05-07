@@ -16,6 +16,7 @@ type ForecastSummary = {
 		state: number | null
 		icon: string | null
 		text: string | null
+		iconUrl: string
 	}
 }
 

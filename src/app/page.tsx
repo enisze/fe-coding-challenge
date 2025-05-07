@@ -12,13 +12,14 @@ const HomePage: React.FC = () => {
 				<h1>wetter.com coding challenge</h1>
 				<NextLink href="/forecast">go to Forecast Page</NextLink>
 
+				<SomeImage />
+
 				<NextLink
 					href={'/this-is-the-forecast-page/7-days/DE0001020'}
-					className={cn(buttonVariants({ variant: 'link' }), '')}
+					className={cn(buttonVariants({ variant: 'secondary' }), 'my-2')}
 				>
 					Zur 7 Tage Übersicht für Berlin
 				</NextLink>
-				<SomeImage />
 			</main>
 		</div>
 	)

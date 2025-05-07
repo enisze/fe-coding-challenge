@@ -37,6 +37,7 @@ export const forecastSchema = z.object({
 					state: z.number().nullable(),
 					icon: z.string().nullable(),
 					text: z.string().nullable(),
+					iconUrl: z.string(),
 				}),
 			}),
 			spaces: z.array(
